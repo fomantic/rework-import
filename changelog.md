@@ -1,3 +1,9 @@
+# 2.1.1 / 2022-10-28
+
+* Replace `url-regex` by `url-regex-safe` to fix [CVE-2020-7661](https://nvd.nist.gov/vuln/detail/CVE-2020-7661)
+* Update dependencies
+* Fixed Tests on Windows
+
 # 2.0.0 / 2014-11-27
 
 * Use `url-regex` to check for @imports containing URLs

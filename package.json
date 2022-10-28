@@ -27,8 +27,9 @@
   "dependencies": {
     "css": "^3.0.0",
     "globby": "^11.1.0",
-		"unixify": "^1.0.0",
     "parse-import": "^2.0.0",
+		"re2": "^1.17.7",
+		"unixify": "^1.0.0",
     "url-regex-safe": "^3.0.0"
   },
   "devDependencies": {
