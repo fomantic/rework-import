@@ -2,7 +2,7 @@
 var path = require('path');
 var readFileSync = require('fs').readFileSync;
 var normalizeNewline = require('normalize-newline');
-var rework = require('rework');
+var rework = require('@fomantic/rework');
 var test = require('ava');
 var reworkImport = require('../');
 var fixture = path.join.bind(null, __dirname, 'fixtures');
@@ -101,17 +101,4 @@ test('show readable trace on import error', function (t) {
 		t.assert(err);
 		t.assert(err.message === msg);
 	}
-});
-
-test('import stylesheets with sourcemap', function (t) {
-	var src = loadFixture('sourcemap/index.css');
-	var css = rework(src, {source: fixture('sourcemap/index.css')})
-		.use(reworkImport())
-		.toString({
-			sourcemap: true,
-			sourcemapAsObject: true
-		});
-
-	t.assert(path.resolve(css.map.sources[0]) === fixture('sourcemap/foo.css'));
-	t.assert(path.resolve(css.map.sources[1]) === fixture('sourcemap/index.css'));
 });

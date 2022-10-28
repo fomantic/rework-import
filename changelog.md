@@ -1,3 +1,8 @@
+# 3.0.0 / 2022-10-28
+
+* Switched from `css` to `@adobe/css-tools` which in turn drops deprecated sourceMap support
+* Switched from `rework` to `@fomantic/rework` for the same reason
+
 # 2.1.1 / 2022-10-28
 
 * Replace `url-regex` by `url-regex-safe` to fix [CVE-2020-7661](https://nvd.nist.gov/vuln/detail/CVE-2020-7661)

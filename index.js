@@ -1,7 +1,7 @@
 'use strict';
 var fs = require('fs');
 var path = require('path');
-var css = require('css');
+var css = require('@adobe/css-tools');
 var globby = require('globby');
 var unixify = require('unixify');
 var parseImport = require('parse-import');

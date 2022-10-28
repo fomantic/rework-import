@@ -1,6 +1,6 @@
 # rework-import [![Build Status](http://img.shields.io/travis/reworkcss/rework-import.svg?style=flat)](https://travis-ci.org/reworkcss/rework-import)
 
-> ### Forked Version using updated dependencies
+> ### Forked Version using updated dependencies and dropped sourceMap support
 > Original repo at https://github.com/reworkcss/rework-import
 
 > Import stylesheets using `@import` and an optional media query
