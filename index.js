@@ -3,8 +3,9 @@ var fs = require('fs');
 var path = require('path');
 var css = require('css');
 var globby = require('globby');
+var unixify = require('unixify');
 var parseImport = require('parse-import');
-var urlRegex = require('url-regex');
+var urlRegex = require('url-regex-safe');
 
 /**
  * Get options
@@ -100,7 +101,7 @@ function createImportError(rule) {
 
 function exists(file, src, opts) {
 	var files = opts.path.map(function (dir) {
-		return path.join(dir, file);
+		return unixify(path.join(dir, file));
 	});
 
 	files = globby.sync(files);

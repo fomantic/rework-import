@@ -1,19 +1,19 @@
 {
-  "name": "rework-import",
-  "version": "2.1.0",
+  "name": "@fomantic/rework-import",
+  "version": "2.1.1",
   "description": "A rework plugin to read and inline CSS files via @import",
   "license": "MIT",
-  "repository": "reworkcss/rework-import",
+  "repository": "https://github.com/fomantic/rework-import",
   "authors": [
     "Jason Campbell <jason@js.la>",
     "Kevin Mårtensson <kevinmartensson@gmail.com>",
     "Maxime Thirouin <m@moox.io>"
   ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=12"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "ava test/test.js"
   },
   "files": [
     "index.js"
@@ -25,15 +25,16 @@
     "rework"
   ],
   "dependencies": {
-    "css": "^2.0.0",
-    "globby": "^2.0.0",
+    "css": "^3.0.0",
+    "globby": "^11.1.0",
+		"unixify": "^1.0.0",
     "parse-import": "^2.0.0",
-    "url-regex": "^3.0.0"
+    "url-regex-safe": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^0.0.4",
-    "css-whitespace": "^1.1.0",
-    "normalize-newline": "^1.0.2",
-    "rework": "^1.0.0"
+    "ava": "^4.3.3",
+    "css-whitespace": "^1.1.1",
+    "normalize-newline": "^3.0.0",
+    "rework": "^1.0.1"
   }
 }

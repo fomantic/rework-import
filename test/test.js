@@ -20,7 +20,6 @@ test('import stylesheet', function (t) {
 		.toString();
 
 	t.assert(css === expected);
-	t.end();
 });
 
 test('import stylesheets recursively', function (t) {
@@ -31,7 +30,6 @@ test('import stylesheets recursively', function (t) {
 		.toString();
 
 	t.assert(css === expected);
-	t.end();
 });
 
 test('import stylesheets relatively', function (t) {
@@ -42,7 +40,6 @@ test('import stylesheets relatively', function (t) {
 		.toString();
 
 	t.assert(css === expected);
-	t.end();
 });
 
 test('import stylesheets with custom transform', function (t) {
@@ -56,7 +53,6 @@ test('import stylesheets with custom transform', function (t) {
 		.toString();
 
 	t.assert(css === expected);
-	t.end();
 });
 
 test('import stylesheet with long media query', function (t) {
@@ -67,7 +63,6 @@ test('import stylesheet with long media query', function (t) {
 		.toString();
 
 	t.assert(css === expected);
-	t.end();
 });
 
 test('import stylesheets without `path` option', function (t) {
@@ -78,7 +73,6 @@ test('import stylesheets without `path` option', function (t) {
 		.toString();
 
 	t.assert(css === expected);
-	t.end();
 });
 
 test('import stylesheets with `path` passed to rework', function (t) {
@@ -89,7 +83,6 @@ test('import stylesheets with `path` passed to rework', function (t) {
 		.toString();
 
 	t.assert(css === expected);
-	t.end();
 });
 
 test('show readable trace on import error', function (t) {
@@ -107,7 +100,6 @@ test('show readable trace on import error', function (t) {
 	} catch (err) {
 		t.assert(err);
 		t.assert(err.message === msg);
-		t.end();
 	}
 });
 
@@ -122,5 +114,4 @@ test('import stylesheets with sourcemap', function (t) {
 
 	t.assert(path.resolve(css.map.sources[0]) === fixture('sourcemap/foo.css'));
 	t.assert(path.resolve(css.map.sources[1]) === fixture('sourcemap/index.css'));
-	t.end();
 });
