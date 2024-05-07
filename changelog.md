@@ -1,3 +1,7 @@
+# 3.1.0 / 2024-05-07
+
+* Lock re2 and css-tool dependency versions to still support node 12
+
 # 3.0.0 / 2022-10-28
 
 * Switched from `css` to `@adobe/css-tools` which in turn drops deprecated sourceMap support
