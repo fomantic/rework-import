@@ -5,7 +5,6 @@ var css = require('@adobe/css-tools');
 var globby = require('globby');
 var unixify = require('unixify');
 var parseImport = require('parse-import');
-var urlRegex = require('url-regex-safe');
 
 /**
  * Get options
@@ -155,7 +154,8 @@ function run(style, opts) {
 			throw Error(createImportError(rule));
 		}
 
-		if (urlRegex({exact: true}).test(data.path)) {
+		// ignore protocol base uri (protocol://url) or protocol-relative (//url)
+		if (data.path.slice(0,20).match(/^(?:[a-z]+:)?\/\//i)) {
 			ret.push(rule);
 			return;
 		}
