@@ -1,3 +1,7 @@
+# 3.2.0 / 2025-02-08
+
+* Remove re2 and url-regex(-safe) dependency by re-implementing a slightly changed protocol check from 2.0
+
 # 3.1.0 / 2024-05-07
 
 * Lock re2 and css-tool dependency versions to still support node 12
