@@ -10,7 +10,7 @@
     "Maxime Thirouin <m@moox.io>"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=18.18.0"
   },
   "scripts": {
     "test": "ava test/test.js"
@@ -25,15 +25,15 @@
     "rework"
   ],
   "dependencies": {
-    "@adobe/css-tools": "4.2.0",
+    "@adobe/css-tools": "^4.4.2",
     "globby": "^11.1.0",
     "parse-import": "^2.0.0",
     "unixify": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^4.3.3",
+    "ava": "^5.3.1",
     "css-whitespace": "^1.1.1",
     "normalize-newline": "^3.0.0",
-    "@fomantic/rework": "^2.0.0"
+    "@fomantic/rework": "^3.0.0"
   }
 }
