@@ -1,3 +1,7 @@
+# 4.0.0 / 2025-03-01
+
+* dependency updates and drop node < 18
+
 # 3.2.0 / 2025-02-08
 
 * Remove re2 and url-regex(-safe) dependency by re-implementing a slightly changed protocol check from 2.0
