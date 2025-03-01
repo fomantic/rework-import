@@ -2,7 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 var css = require('@adobe/css-tools');
-var globby = require('globby');
+var globby = require('fast-glob');
 var unixify = require('unixify');
 var parseImport = require('parse-import');
 

@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "@adobe/css-tools": "^4.4.2",
-    "globby": "^11.1.0",
+    "fast-glob": "^3.3.3",
     "parse-import": "^2.0.0",
     "unixify": "^1.0.0"
   },
