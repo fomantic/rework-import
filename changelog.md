@@ -1,3 +1,7 @@
+# 4.1.0 / 2025-03-01
+
+* switch from globby to fast-glob removing audit issues
+
 # 4.0.0 / 2025-03-01
 
 * dependency updates and drop node < 18
